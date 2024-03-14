@@ -1,29 +1,14 @@
 ---
 import "../styles/style.css"
 import Card from "../components/Card.astro";
-import Navigation from "../components/Navigation.astro";
-import Button from "../components/Button.astro"
+import Button from "../components/Button.astro";
+import MainLayout from "../layouts/MainLayout.astro";
 ---
-
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-		<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deserunt dignissimos eos laudantium possimus mollitia eveniet, velit odio numquam ducimus modi optio unde, asperiores, pariatur nihil quia facere consequuntur repellendus eius?</p>
-	<Navigation />
+<MainLayout title="HJEM">
 	<Button variant="primary" size="small">text</Button>
 	<Button variant="secondary" size="medium">text</Button>
 	<Button variant="secondary" size="large">text</Button>
-		<main>
 	<Card header="Hej Verden" text="Lorem ipsum dollar">
 		<img src="/public/circle3.png" alt="en cirkel"> </Card>
 	<Card header="Hej world" text="Lorem ipsum dollar"/>
-		</main>
-	</body>
-</html>
+</MainLayout>
